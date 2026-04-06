@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 49bedbf1c7e713c48854e24738b9aae1
+timeCreated: 1538602248
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Props/SM_Prop_FlagPole_01.prefab
+  uploadId: 884520

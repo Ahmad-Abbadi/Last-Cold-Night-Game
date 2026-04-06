@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5c7f9c202ea3d914899063d0218dc395
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43944439464852556
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Veh_Wagon_Jail_01_Convex.asset
+  uploadId: 884520

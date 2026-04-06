@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9873274d4b493ed4aaa8fa00243bd257
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43846541209808682
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_WashingLine_01_Convex.asset
+  uploadId: 884520

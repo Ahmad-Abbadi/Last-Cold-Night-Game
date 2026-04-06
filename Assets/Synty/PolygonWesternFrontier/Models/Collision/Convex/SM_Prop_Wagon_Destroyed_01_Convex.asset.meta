@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 96671bf266686c540be223f5c89ee8c3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43696042016190126
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Wagon_Destroyed_01_Convex.asset
+  uploadId: 884520

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6068f0d0298633f4d97cd682123592b9
+timeCreated: 1538602705
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Generic/SM_Generic_Cloud_03.prefab
+  uploadId: 884520

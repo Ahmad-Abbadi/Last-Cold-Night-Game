@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ac43b2815567d734aa1e2bc19f84e118
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43225955516914990
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_RockTall_01_Convex.asset
+  uploadId: 884520

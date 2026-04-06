@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 550c4791e4c1b8646a69984deb9e604c
+timeCreated: 1538536744
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Environments/SM_Env_Quarry_Rocks_02.prefab
+  uploadId: 884520

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 487f7dab096f45943b9c05a2dc5f293f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43417642619810498
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Stack_01_Convex.asset
+  uploadId: 884520

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6c0a18f8f759b774e9ceda1c1de80f86
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43934167856587570
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Bld_Mexican_Wall_01_Convex.asset
+  uploadId: 884520

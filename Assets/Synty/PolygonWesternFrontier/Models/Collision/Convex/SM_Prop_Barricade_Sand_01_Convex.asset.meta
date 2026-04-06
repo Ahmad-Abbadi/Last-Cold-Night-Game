@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 669dbe2e5a85b4249be05e049a22500a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43712419164822864
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Barricade_Sand_01_Convex.asset
+  uploadId: 884520

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6dfc818d5f150df4da5ab45b2d1c3e48
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43131514732675634
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Mine_Track_Base_01_Convex.asset
+  uploadId: 884520

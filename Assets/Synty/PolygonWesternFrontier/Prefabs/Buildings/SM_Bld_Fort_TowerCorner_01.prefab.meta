@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 901fa9eec8acf7c4eb9b6a0c29012927
+timeCreated: 1538600984
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Buildings/SM_Bld_Fort_TowerCorner_01.prefab
+  uploadId: 884520

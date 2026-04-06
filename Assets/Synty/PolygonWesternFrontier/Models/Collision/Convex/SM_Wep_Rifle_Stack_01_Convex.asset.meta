@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 64f31e9579d68a44886b21ed47900274
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43154580837472604
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Wep_Rifle_Stack_01_Convex.asset
+  uploadId: 884520

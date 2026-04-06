@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 88bc482bb8237a74fb6d37e3bdd83750
+timeCreated: 1538600983
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Buildings/SM_Bld_Mexican_Wall_Corner_01.prefab
+  uploadId: 884520

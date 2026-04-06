@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 294dcb7f17d463547ac578472b10c38b
+timeCreated: 1539229824
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/FX/FX_GunSmoke_01.prefab
+  uploadId: 884520

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f513ae7c177e5e643b55cc02dfa268ae
+timeCreated: 1538612913
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Environments/SM_Env_River_Straight_02.prefab
+  uploadId: 884520

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8870781f669c2504ba265ced32747887
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43884502285289594
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_PlankFence_01_Convex.asset
+  uploadId: 884520

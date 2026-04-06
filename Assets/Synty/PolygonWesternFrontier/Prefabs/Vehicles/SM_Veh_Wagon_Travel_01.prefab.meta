@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: de0057775676e7f4996fe8517bbfc73a
+timeCreated: 1539056339
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Vehicles/SM_Veh_Wagon_Travel_01.prefab
+  uploadId: 884520

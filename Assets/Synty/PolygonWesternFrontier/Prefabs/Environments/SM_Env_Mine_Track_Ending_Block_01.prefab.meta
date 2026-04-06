@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e9ae61f6b450958418f813c3d5cfe8b7
+timeCreated: 1538536737
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Environments/SM_Env_Mine_Track_Ending_Block_01.prefab
+  uploadId: 884520

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2ee7a6aabff973c4098cbc17846231a8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43613965473617190
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Campfire_Small_01_Convex.asset
+  uploadId: 884520

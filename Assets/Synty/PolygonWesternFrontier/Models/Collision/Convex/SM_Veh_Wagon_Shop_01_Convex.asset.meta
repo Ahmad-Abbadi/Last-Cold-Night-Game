@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: faf061b5d5cc27b45b6db7236a6b8414
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43280917939683700
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Veh_Wagon_Shop_01_Convex.asset
+  uploadId: 884520

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a06b87c0a4330264fbbef57d8ba4337c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43581905122487928
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Mound_Slope_03_Convex.asset
+  uploadId: 884520

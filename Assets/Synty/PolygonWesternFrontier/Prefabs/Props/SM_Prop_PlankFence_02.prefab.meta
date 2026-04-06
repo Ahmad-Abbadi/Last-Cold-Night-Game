@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6e02e386bb57b5b4ea2b382896737b32
+timeCreated: 1539036221
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Props/SM_Prop_PlankFence_02.prefab
+  uploadId: 884520

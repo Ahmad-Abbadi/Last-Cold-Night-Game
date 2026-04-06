@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 38e089d07756b0847abc3958225af5bf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43089710260249556
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_SkullPole_01_Convex.asset
+  uploadId: 884520

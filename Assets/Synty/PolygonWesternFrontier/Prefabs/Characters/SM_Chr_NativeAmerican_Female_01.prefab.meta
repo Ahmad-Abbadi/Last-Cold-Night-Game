@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f4a4844b0c1edce4fadad9ab0d125d6c
+timeCreated: 1545009019
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Characters/SM_Chr_NativeAmerican_Female_01.prefab
+  uploadId: 884520

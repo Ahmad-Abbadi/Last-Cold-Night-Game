@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 822a2ac5e55edc946b9039969f5aa38c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43910657958404784
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Mine_Wall_High_02_Convex.asset
+  uploadId: 884520

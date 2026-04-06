@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4d5c869ec91d2c44c9a82dbee2a11e7a
+timeCreated: 1539048267
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Weapons/SM_Wep_Revolver_01.prefab
+  uploadId: 884520

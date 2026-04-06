@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 312f42feec4b9a24ba8e1bdaefe3058f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43039571165757118
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Bld_Fort_Entrance_01_Convex.asset
+  uploadId: 884520

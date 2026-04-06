@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c35f84f41c1bb19489c53e719b6bc75e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43205457144538936
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_River_Straight_05_Convex.asset
+  uploadId: 884520

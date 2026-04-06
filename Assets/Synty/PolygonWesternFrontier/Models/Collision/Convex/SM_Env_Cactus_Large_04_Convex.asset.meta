@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 06e959206ebb3ba4c84746a57b116669
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43291544245688922
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Cactus_Large_04_Convex.asset
+  uploadId: 884520

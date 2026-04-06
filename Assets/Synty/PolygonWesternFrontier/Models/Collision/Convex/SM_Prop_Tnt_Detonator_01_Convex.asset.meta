@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f4dd647fb5cf38d4597fa7f92c5d717a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43271435351775116
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Tnt_Detonator_01_Convex.asset
+  uploadId: 884520

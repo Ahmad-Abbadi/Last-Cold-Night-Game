@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 12e6da18eb7250045a98c333a627b59d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43535501226675536
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Generic_Ground_Flat_01_Convex.asset
+  uploadId: 884520

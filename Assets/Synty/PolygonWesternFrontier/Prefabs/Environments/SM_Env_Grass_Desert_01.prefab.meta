@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 232230736ca35364491649faf7d527f5
+timeCreated: 1538602245
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Environments/SM_Env_Grass_Desert_01.prefab
+  uploadId: 884520

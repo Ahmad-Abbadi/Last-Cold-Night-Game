@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d8549497d204f534d98f838e8232c0d5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43484438607519414
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_ChestFur_01_Convex.asset
+  uploadId: 884520

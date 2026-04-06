@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 934c2cbd9225a4040ba3942eeb664087
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43369506032229644
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_ShrubGrass_01_Convex.asset
+  uploadId: 884520

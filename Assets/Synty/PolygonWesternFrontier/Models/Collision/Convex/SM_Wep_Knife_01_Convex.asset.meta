@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: af7269dbc15bc6641960754fec3995ab
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43200475713034274
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Wep_Knife_01_Convex.asset
+  uploadId: 884520

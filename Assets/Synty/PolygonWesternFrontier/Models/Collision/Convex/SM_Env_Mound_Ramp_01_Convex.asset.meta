@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 345e79caa1527c14196ce8800fdd47b0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43763666367691398
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Mound_Ramp_01_Convex.asset
+  uploadId: 884520

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3fb8c8b1a9d4739489547219742675ac
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43151565439056810
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Shrub_02_Convex.asset
+  uploadId: 884520

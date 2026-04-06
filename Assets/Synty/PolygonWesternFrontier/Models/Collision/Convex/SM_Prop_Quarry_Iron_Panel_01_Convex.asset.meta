@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 35fe5be8940490746b106b74d312e4db
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43364079626699636
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Quarry_Iron_Panel_01_Convex.asset
+  uploadId: 884520

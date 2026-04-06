@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7d8de34e5ef49134da2071a4a9458c81
+timeCreated: 1538602246
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Environments/SM_Env_Tree_Dead_01.prefab
+  uploadId: 884520

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 08a16be69c96c2c4289a8dfe9ab599c9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43334625181852288
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Gold_Ingot_01_Convex.asset
+  uploadId: 884520

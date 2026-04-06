@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 40416f6f047a36b49b29f48e2de76762
+timeCreated: 1538539548
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Environments/SM_Env_RockSmall_03.prefab
+  uploadId: 884520

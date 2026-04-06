@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8224ef586c9f5e9438fc25abb26e4a85
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43936045042503988
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Arrow_01_Convex.asset
+  uploadId: 884520

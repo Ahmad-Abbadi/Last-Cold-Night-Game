@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3558c385d3b49a24cbefc313eb1cde77
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43406816473921228
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Reeds_02_Convex.asset
+  uploadId: 884520

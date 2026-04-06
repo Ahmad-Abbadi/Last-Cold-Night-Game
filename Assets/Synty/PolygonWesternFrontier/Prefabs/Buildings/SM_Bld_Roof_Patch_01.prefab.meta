@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6f9778b937eeb67499afbc0de1bccd8d
+timeCreated: 1538602248
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Buildings/SM_Bld_Roof_Patch_01.prefab
+  uploadId: 884520

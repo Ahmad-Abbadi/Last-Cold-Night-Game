@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d602908648f1e7c46abecd5db8937929
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43701654736176292
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Bld_Roof_Patch_01_Convex.asset
+  uploadId: 884520

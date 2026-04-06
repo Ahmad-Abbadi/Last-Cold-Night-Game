@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3b770b69c713a224098aa8ab907873a5
+timeCreated: 1538536826
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Buildings/SM_Bld_Quarry_03.prefab
+  uploadId: 884520

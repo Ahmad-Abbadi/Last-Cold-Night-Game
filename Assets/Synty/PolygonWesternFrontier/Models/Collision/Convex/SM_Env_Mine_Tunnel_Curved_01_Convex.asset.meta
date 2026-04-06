@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4a71b05e741fb864db989a6b0af4f86c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43187172228871462
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Mine_Tunnel_Curved_01_Convex.asset
+  uploadId: 884520

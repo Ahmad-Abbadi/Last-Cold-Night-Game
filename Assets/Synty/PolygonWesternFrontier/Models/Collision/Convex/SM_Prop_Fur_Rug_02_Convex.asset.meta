@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f6980a48960184b408b20c31f15950aa
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43157175985805124
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Fur_Rug_02_Convex.asset
+  uploadId: 884520

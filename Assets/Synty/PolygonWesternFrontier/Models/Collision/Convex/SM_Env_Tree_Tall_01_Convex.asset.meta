@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b7501c323be162d4b9840b48f1563bd1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43440751308372138
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Tree_Tall_01_Convex.asset
+  uploadId: 884520

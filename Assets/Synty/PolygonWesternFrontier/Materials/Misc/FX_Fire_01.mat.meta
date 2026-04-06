@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 68b1d649e375fdb44ac18ad701232f88
+timeCreated: 1539230659
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Materials/Misc/FX_Fire_01.mat
+  uploadId: 884520

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 56ac0e3740fd2694093d4963f35575df
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43760099682442436
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Tree_Tall_Dead_01_Convex.asset
+  uploadId: 884520

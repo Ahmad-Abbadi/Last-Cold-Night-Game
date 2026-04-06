@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 66a889cc3f242fb43be077f3dd13d9d9
+timeCreated: 1538536758
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Weapons/SM_Wep_ChainGun_01.prefab
+  uploadId: 884520

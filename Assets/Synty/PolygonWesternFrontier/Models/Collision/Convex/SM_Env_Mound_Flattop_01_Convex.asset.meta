@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6324ab9e249179349a537f4ea011e3f5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43772178833738430
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Mound_Flattop_01_Convex.asset
+  uploadId: 884520

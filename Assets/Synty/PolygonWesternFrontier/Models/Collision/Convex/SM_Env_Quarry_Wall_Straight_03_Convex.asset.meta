@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a9ab2848633077146b655269ee2eacd6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43719947528702380
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Quarry_Wall_Straight_03_Convex.asset
+  uploadId: 884520

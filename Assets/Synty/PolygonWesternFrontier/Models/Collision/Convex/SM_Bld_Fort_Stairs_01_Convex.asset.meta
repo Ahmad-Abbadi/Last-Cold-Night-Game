@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d023bce777c03534fae4857c69220778
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43506953302735520
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Bld_Fort_Stairs_01_Convex.asset
+  uploadId: 884520

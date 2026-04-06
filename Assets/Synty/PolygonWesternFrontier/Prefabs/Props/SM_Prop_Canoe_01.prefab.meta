@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 985b789d9bd48724faad4ef1ccb09677
+timeCreated: 1538519432
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Props/SM_Prop_Canoe_01.prefab
+  uploadId: 884520

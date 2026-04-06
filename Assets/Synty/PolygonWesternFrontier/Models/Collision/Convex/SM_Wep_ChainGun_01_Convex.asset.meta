@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7a9d8a77e1632c54095444c7be4b28ee
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43944547148710086
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Wep_ChainGun_01_Convex.asset
+  uploadId: 884520

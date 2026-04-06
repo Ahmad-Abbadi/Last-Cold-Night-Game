@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0073c26b791b06c42bc891f2d1e617af
+timeCreated: 1538600986
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Buildings/SM_Bld_Fort_Wall_01.prefab
+  uploadId: 884520

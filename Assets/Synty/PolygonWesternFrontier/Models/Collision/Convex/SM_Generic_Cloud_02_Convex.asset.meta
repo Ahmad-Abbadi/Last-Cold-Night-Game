@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0bfe6182651360c489c8f2b902bf7f92
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43027208215019100
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Generic_Cloud_02_Convex.asset
+  uploadId: 884520

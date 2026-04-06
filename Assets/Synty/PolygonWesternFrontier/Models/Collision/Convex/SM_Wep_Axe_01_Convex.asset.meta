@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b51ac1492d61b9d4e8a2a6670c2c61ca
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43477038978101058
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Wep_Axe_01_Convex.asset
+  uploadId: 884520

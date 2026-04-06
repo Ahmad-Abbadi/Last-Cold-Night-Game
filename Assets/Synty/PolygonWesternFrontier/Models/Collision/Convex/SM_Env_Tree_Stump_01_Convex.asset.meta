@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d53fb4b1381eec241b1472d7c4aa89f9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43687453868751508
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Tree_Stump_01_Convex.asset
+  uploadId: 884520

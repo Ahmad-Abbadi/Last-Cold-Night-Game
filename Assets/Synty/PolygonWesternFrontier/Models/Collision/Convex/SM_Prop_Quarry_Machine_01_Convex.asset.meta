@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 829b521ca28e71a42ba86ee67f9b6a42
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43810366823764620
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Quarry_Machine_01_Convex.asset
+  uploadId: 884520

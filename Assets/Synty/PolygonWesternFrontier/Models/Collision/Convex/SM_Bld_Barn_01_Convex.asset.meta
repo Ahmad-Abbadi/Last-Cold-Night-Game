@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bdc54477bfe21ca419debd2f8ea2b227
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43490510447386112
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Bld_Barn_01_Convex.asset
+  uploadId: 884520

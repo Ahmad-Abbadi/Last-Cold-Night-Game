@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: efafa5ce516e39c4b9bea46f49babc32
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43564266649923022
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_Tnt_Barrel_01_Convex.asset
+  uploadId: 884520

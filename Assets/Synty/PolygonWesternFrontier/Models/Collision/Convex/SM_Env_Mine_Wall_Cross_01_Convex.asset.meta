@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0f4279eed45d60548a2a155f23fb4091
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43176740688464276
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Mine_Wall_Cross_01_Convex.asset
+  uploadId: 884520

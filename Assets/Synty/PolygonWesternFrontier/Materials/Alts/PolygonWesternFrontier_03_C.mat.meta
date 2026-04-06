@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 45b94b1a78f1d6e4b9deb4c879340800
+timeCreated: 1538514726
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Materials/Alts/PolygonWesternFrontier_03_C.mat
+  uploadId: 884520

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6f1d24a1ba5e2bc439741e9d57374425
+timeCreated: 1538702500
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Props/SM_Prop_Pipes_02.prefab
+  uploadId: 884520

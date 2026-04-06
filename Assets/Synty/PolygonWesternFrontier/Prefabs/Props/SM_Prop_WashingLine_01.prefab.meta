@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f77690c254d5a204c8f02319f751516b
+timeCreated: 1538519435
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Props/SM_Prop_WashingLine_01.prefab
+  uploadId: 884520

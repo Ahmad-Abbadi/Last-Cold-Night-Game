@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a7ecabdd36598044da543ddfd3b12653
+timeCreated: 1538602706
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Prefabs/Generic/SM_Gerneric_Grass_Patch_02.prefab
+  uploadId: 884520

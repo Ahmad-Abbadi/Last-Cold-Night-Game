@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 982cb8f4caf4550489ca4271edfccd1c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43905565245373112
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Bld_Steps_01_Convex.asset
+  uploadId: 884520

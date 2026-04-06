@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fd0e7ab8a66e17846b397dfdfb4b6c6b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43493046015028202
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Prop_WoodBox_01_Convex.asset
+  uploadId: 884520

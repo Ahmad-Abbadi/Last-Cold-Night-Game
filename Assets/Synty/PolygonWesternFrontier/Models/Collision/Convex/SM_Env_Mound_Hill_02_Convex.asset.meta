@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f02b1ccbbdc5eff4e964182d987f1c8c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 43806128834172620
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 130564
+  packageName: POLYGON - Western Frontier Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonWesternFrontier/Models/Collision/Convex/SM_Env_Mound_Hill_02_Convex.asset
+  uploadId: 884520
