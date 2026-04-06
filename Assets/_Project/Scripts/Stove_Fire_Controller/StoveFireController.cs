@@ -13,6 +13,7 @@ public class StoveFireController : MonoBehaviour
         public float EmissionRateOverTimeMultiplier;
     }
 
+
     [Header("References")]
     [SerializeField] private StoveController stoveController;
     [SerializeField] private ParticleSystem[] stoveFire = Array.Empty<ParticleSystem>();
