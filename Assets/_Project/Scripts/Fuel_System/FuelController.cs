@@ -1,5 +1,7 @@
 using Sirenix.OdinInspector;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FuelController : MonoBehaviour
@@ -9,6 +11,8 @@ public class FuelController : MonoBehaviour
 
     [SerializeField] private float ownedFuel;
 
+    [Header("Refrences")]
+    [SerializeField] private WoodFuelManager woodFuelManager;
 
     public float StartFuelAmount { get => startFuelAmount;}
     public float OwendFuel { get => ownedFuel;}
@@ -40,6 +44,16 @@ public class FuelController : MonoBehaviour
 
         ChangeFuelAmount(-1f);
 
+        if(woodFuelManager != null)
+        {
+            woodFuelManager.DoWoodFuelAnimation(OnFuelWoodAnimationDone);
+        }
+
+
+    }
+
+    private void OnFuelWoodAnimationDone()
+    {
         OnFuelConsumedWithAmount?.Invoke(heatAddedPerFuel);
         OnFuelConsumed?.Invoke();
     }

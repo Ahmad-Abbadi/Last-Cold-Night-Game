@@ -46,7 +46,7 @@ public class StoveController : MonoBehaviour
 
     private void HeatDrain()
     {
-        HeatLevelValue -= Time.deltaTime * 1f; 
+        HeatLevelValue -= Time.deltaTime * _heatDrainRate; 
         HeatLevelValue = Mathf.Clamp(HeatLevelValue, 0, HeatMax);
 
         ValidateHeatLevelType();
