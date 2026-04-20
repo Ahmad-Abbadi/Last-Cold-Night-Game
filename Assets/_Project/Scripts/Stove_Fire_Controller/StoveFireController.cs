@@ -18,38 +18,12 @@ public class StoveFireController : MonoBehaviour
     [SerializeField] private StoveController stoveController;
     [SerializeField] private ParticleSystem[] stoveFire = Array.Empty<ParticleSystem>();
 
-    [Header("Heat Response")]
-    [SerializeField, Min(0f)] private float smoothingTime = 0.35f;
-    [SerializeField] private AnimationCurve heatResponseCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
-
-    [Header("Emission")]
-    [SerializeField, Min(0f)] private float emissionMultiplierAtMinHeat = 0.2f;
-    [SerializeField, Min(0f)] private float emissionMultiplierAtMaxHeat = 1.3f;
-
-    [Header("Shape")]
-    [SerializeField, Min(0f)] private float sizeMultiplierAtMinHeat = 0.7f;
-    [SerializeField, Min(0f)] private float sizeMultiplierAtMaxHeat = 1.15f;
-    [SerializeField, Min(0f)] private float lifetimeMultiplierAtMinHeat = 0.9f;
-    [SerializeField, Min(0f)] private float lifetimeMultiplierAtMaxHeat = 1.05f;
-
-    [Header("Motion")]
-    [SerializeField, Min(0f)] private float speedMultiplierAtMinHeat = 0.75f;
-    [SerializeField, Min(0f)] private float speedMultiplierAtMaxHeat = 1.2f;
-    [SerializeField, Min(0f)] private float simulationSpeedMultiplierAtMinHeat = 0.85f;
-    [SerializeField, Min(0f)] private float simulationSpeedMultiplierAtMaxHeat = 1.2f;
-
-    [Header("Optional Light")]
-    [SerializeField, Min(0f)] private float lightIntensityMultiplierAtMinHeat = 0.4f;
-    [SerializeField, Min(0f)] private float lightIntensityMultiplierAtMaxHeat = 1.15f;
-    [SerializeField, Min(0f)] private float lightRangeMultiplierAtMinHeat = 0.75f;
-    [SerializeField, Min(0f)] private float lightRangeMultiplierAtMaxHeat = 1.1f;
-
     private CachedParticleSettings[] cachedParticleSettings = Array.Empty<CachedParticleSettings>();
-    private float cachedLightIntensity;
-    private float cachedLightRange;
     private float smoothedVisualHeat;
     private float visualHeatVelocity;
     private bool visualsInitialized;
+
+    private StoveFireVisualSettings VisualSettings => GameSettings.Current.StoveFireVisuals;
 
     private void Reset()
     {
@@ -129,6 +103,7 @@ public class StoveFireController : MonoBehaviour
 
     private float SmoothHeat(float targetHeat)
     {
+        float smoothingTime = VisualSettings.SmoothingTime;
         if (smoothingTime <= 0f)
             return targetHeat;
 
@@ -152,6 +127,7 @@ public class StoveFireController : MonoBehaviour
     private float EvaluateHeatResponse(float visualHeat)
     {
         float clampedHeat = Mathf.Clamp01(visualHeat);
+        AnimationCurve heatResponseCurve = VisualSettings.HeatResponseCurve;
         return heatResponseCurve == null
             ? clampedHeat
             : Mathf.Clamp01(heatResponseCurve.Evaluate(clampedHeat));
@@ -162,11 +138,12 @@ public class StoveFireController : MonoBehaviour
         if (stoveFire == null || cachedParticleSettings == null || cachedParticleSettings.Length != stoveFire.Length)
             return;
 
-        float emissionMultiplier = Mathf.Lerp(emissionMultiplierAtMinHeat, emissionMultiplierAtMaxHeat, evaluatedHeat);
-        float sizeMultiplier = Mathf.Lerp(sizeMultiplierAtMinHeat, sizeMultiplierAtMaxHeat, evaluatedHeat);
-        float speedMultiplier = Mathf.Lerp(speedMultiplierAtMinHeat, speedMultiplierAtMaxHeat, evaluatedHeat);
-        float simulationSpeedMultiplier = Mathf.Lerp(simulationSpeedMultiplierAtMinHeat, simulationSpeedMultiplierAtMaxHeat, evaluatedHeat);
-        float lifetimeMultiplier = Mathf.Lerp(lifetimeMultiplierAtMinHeat, lifetimeMultiplierAtMaxHeat, evaluatedHeat);
+        StoveFireVisualSettings settings = VisualSettings;
+        float emissionMultiplier = Mathf.Lerp(settings.EmissionMultiplierAtMinHeat, settings.EmissionMultiplierAtMaxHeat, evaluatedHeat);
+        float sizeMultiplier = Mathf.Lerp(settings.SizeMultiplierAtMinHeat, settings.SizeMultiplierAtMaxHeat, evaluatedHeat);
+        float speedMultiplier = Mathf.Lerp(settings.SpeedMultiplierAtMinHeat, settings.SpeedMultiplierAtMaxHeat, evaluatedHeat);
+        float simulationSpeedMultiplier = Mathf.Lerp(settings.SimulationSpeedMultiplierAtMinHeat, settings.SimulationSpeedMultiplierAtMaxHeat, evaluatedHeat);
+        float lifetimeMultiplier = Mathf.Lerp(settings.LifetimeMultiplierAtMinHeat, settings.LifetimeMultiplierAtMaxHeat, evaluatedHeat);
 
         for (int i = 0; i < stoveFire.Length; i++)
         {

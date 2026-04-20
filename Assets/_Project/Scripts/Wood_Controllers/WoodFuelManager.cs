@@ -7,34 +7,37 @@ public class WoodFuelManager : SerializedMonoBehaviour
 {
     [SerializeField] private Queue<WoodFuel> fuelWood;
 
-    [Header("Settings")]
-    [SerializeField] private bool snapToHandOnStart = false;
-
     [Header("References")]
     [SerializeField] private Transform _handTransform;
     [SerializeField] private Transform[] _targetTransform;
     private Transform[] _targetRotationTransform;
 
-    [Header("Hand Hold Offset")]
-    [SerializeField] private Vector3 _handPositionOffset;
-    [SerializeField] private Vector3 _handRotationOffset;
-
     public Queue<WoodFuel> FuelWood { get => fuelWood; set => fuelWood = value; }
+
+    private WoodFuelManagerSettings ManagerSettings => GameSettings.Current.WoodFuelManager;
 
     private void Awake()
     {
+        if (fuelWood == null || _targetTransform == null || _targetTransform.Length == 0)
+            return;
+
         _targetRotationTransform = (Transform[])_targetTransform.Clone();
 
         System.Random rand = new System.Random();
+        WoodFuelManagerSettings settings = ManagerSettings;
+
         foreach (WoodFuel wood in fuelWood)
         {
+            if (wood == null)
+                continue;
+
             int randomIndex = rand.Next(_targetTransform.Length);
 
             wood._handTransform = _handTransform;
             wood._targetTransform = _targetTransform[randomIndex];
             wood._targetRotationTransform = _targetRotationTransform[randomIndex];
-            wood._handPositionOffset = _handPositionOffset;
-            wood._handRotationOffset = _handRotationOffset;
+            wood._handPositionOffset = settings.HandPositionOffset;
+            wood._handRotationOffset = settings.HandRotationOffset;
         }
     }
     public void DoWoodFuelAnimation(Action action)
@@ -44,7 +47,7 @@ public class WoodFuelManager : SerializedMonoBehaviour
 
         WoodFuel woodFuelMovement = fuelWood.Dequeue();
 
-        if (snapToHandOnStart)
+        if (ManagerSettings.SnapToHandOnStart)
         {
             woodFuelMovement.SnapWoodToHand();
         }

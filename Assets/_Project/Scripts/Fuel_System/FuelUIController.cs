@@ -1,8 +1,6 @@
 using MoreMountains.Feedbacks;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class FuelUIController : MonoBehaviour
 {
@@ -16,10 +14,12 @@ public class FuelUIController : MonoBehaviour
     [SerializeField] private MMF_Player fuelAmountEffect;
     [SerializeField] private MMF_Player fuelDepletedEffect;
 
+    private FuelUiSettings UiSettings => GameSettings.Current.FuelUi;
 
     private void Awake()
     {
-        fuelController = GetComponent<FuelController>();
+        if (fuelController == null)
+            fuelController = GetComponent<FuelController>();
 
     }
 
@@ -53,7 +53,7 @@ public class FuelUIController : MonoBehaviour
 
     private void UpdateFuelAmountText(float amount)
     {
-        fuelAmountText.text = "Fuel Amount: " + $"{amount}";
+        fuelAmountText.text = $"{UiSettings.FuelAmountPrefix}{amount}";
         fuelAmountEffect?.PlayFeedbacks();
     }
 }

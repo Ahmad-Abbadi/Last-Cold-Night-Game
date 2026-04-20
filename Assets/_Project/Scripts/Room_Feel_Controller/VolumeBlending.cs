@@ -8,12 +8,11 @@ public class VolumeBlending : MonoBehaviour
     [Header("References")]
     [SerializeField] private StoveController stoveController;
 
-    [Header("Blending Settings")]
-    [SerializeField, Min(0.01f)] private float blendDuration = 1f;
-
     private Coroutine _blendRoutine;
     private Volume _currentVolume;
     private bool _isInitialized;
+
+    private VolumeBlendSettings BlendSettings => GameSettings.Current.VolumeBlending;
 
     private void OnEnable()
     {
@@ -29,12 +28,25 @@ public class VolumeBlending : MonoBehaviour
 
     private void OnHeatTypeChanged(HeatLevelType type)
     {
-        Volume targetVolume = RoomBlackboard.Instance.Volumes[type];
+        if (RoomBlackboard.Instance == null
+            || RoomBlackboard.Instance.Volumes == null
+            || !RoomBlackboard.Instance.Volumes.TryGetValue(type, out Volume targetVolume))
+        {
+            Debug.LogWarning($"No volume configured for heat type {type}.");
+            return;
+        }
+
         BlendVolume(targetVolume);
     }
 
     public void BlendVolume(Volume targetVolume)
     {
+        if (RoomBlackboard.Instance == null || RoomBlackboard.Instance.Volumes == null)
+        {
+            Debug.LogWarning("BlendVolume called without a RoomBlackboard volume map.");
+            return;
+        }
+
         if (targetVolume == null)
         {
             Debug.LogWarning("BlendVolume called with null.");
@@ -94,13 +106,14 @@ public class VolumeBlending : MonoBehaviour
         }
 
         float elapsed = 0f;
+        float blendDuration = BlendSettings.BlendDuration;
 
         while (elapsed < blendDuration)
         {
             elapsed += Time.deltaTime;
             float t = Mathf.Clamp01(elapsed / blendDuration);
 
-            t = t * t * (3f - 2f * t);
+            t = BlendSettings.BlendCurve == null ? t : Mathf.Clamp01(BlendSettings.BlendCurve.Evaluate(t));
 
             foreach (var volume in allVolumes)
             {

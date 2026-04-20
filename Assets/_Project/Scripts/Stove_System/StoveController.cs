@@ -4,29 +4,23 @@ using UnityEngine;
 
 public class StoveController : MonoBehaviour
 {
-
     [Space(10)]
-    [Range(0, 100), ReadOnly]
+    [ReadOnly]
     public float _heatLevelValue = 0f;
     [ReadOnly]
     public HeatLevelType _heatLevelType = HeatLevelType.None;
 
-    [Header("Settings")]
-    [SerializeField] private float _heatMax = 100f;
-    [SerializeField] private float _heatDrainRate = 1f;
-    [Space(10)]
-    [SerializeField] private HeatLevelSteps _heatMinSteps = new HeatLevelSteps();
-
     public float HeatLevelValue { get => _heatLevelValue; set => _heatLevelValue = value; }
-    public float HeatMax { get => _heatMax; set => _heatMax = value; }
+    public float HeatMax => HeatSettings.HeatMax;
     public float HeatRatio => HeatMax <= 0f ? 0f : Mathf.Clamp01(HeatLevelValue / HeatMax);
 
     public event Action<HeatLevelType> HeatTypeChanged;
 
+    private StoveHeatSettings HeatSettings => GameSettings.Current.StoveHeat;
+
     private void OnEnable()
     {
         FuelController.OnFuelConsumedWithAmount += OnFuelConsumed;
-
     }
 
     private void OnDisable()
@@ -35,7 +29,7 @@ public class StoveController : MonoBehaviour
     }
     private void Start()
     {
-        _heatLevelValue = _heatMax;
+        _heatLevelValue = HeatMax;
         ValidateHeatLevelType();
     }
 
@@ -46,7 +40,7 @@ public class StoveController : MonoBehaviour
 
     private void HeatDrain()
     {
-        HeatLevelValue -= Time.deltaTime * _heatDrainRate; 
+        HeatLevelValue -= Time.deltaTime * HeatSettings.HeatDrainRate;
         HeatLevelValue = Mathf.Clamp(HeatLevelValue, 0, HeatMax);
 
         ValidateHeatLevelType();
@@ -54,10 +48,12 @@ public class StoveController : MonoBehaviour
 
     private void ValidateHeatLevelType()
     {
+        HeatLevelThresholds thresholds = HeatSettings.Thresholds;
+
         HeatLevelType newHeatLevelType =
-            _heatLevelValue > _heatMinSteps.Hot ? HeatLevelType.Hot :
-            _heatLevelValue > _heatMinSteps.Stable ? HeatLevelType.Stable :
-            _heatLevelValue > _heatMinSteps.Low ? HeatLevelType.Low :
+            _heatLevelValue > thresholds.Hot ? HeatLevelType.Hot :
+            _heatLevelValue > thresholds.Stable ? HeatLevelType.Stable :
+            _heatLevelValue > thresholds.Low ? HeatLevelType.Low :
             HeatLevelType.Critical;
 
         if (newHeatLevelType == _heatLevelType)
@@ -71,20 +67,11 @@ public class StoveController : MonoBehaviour
     private void OnFuelConsumed(float heatAddedPerFuel)
     {
         _heatLevelValue += heatAddedPerFuel;
-        _heatLevelValue = Mathf.Clamp(_heatLevelValue, 0, _heatMax);
+        _heatLevelValue = Mathf.Clamp(_heatLevelValue, 0, HeatMax);
 
         ValidateHeatLevelType();
     }
     #endregion
-}
-
-[Serializable]
-struct HeatLevelSteps
-{
-    public float Hot;
-    public float Stable;
-    public float Low;
-    public float Critcal;
 }
 
 public enum HeatLevelType

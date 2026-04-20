@@ -7,21 +7,12 @@ public class WoodFuel : MonoBehaviour
 {
     private Rigidbody rb;
 
-    [Header("Settings")]
-    [SerializeField] private float _moveDuration = 0.6f;
-    [SerializeField] private float _arcHeight = 0.25f;
-    [SerializeField] private float _rotationLerpSpeed = 12f;
-    [SerializeField] private float _stopDistance = 0.02f;
-    [SerializeField] private bool _releasePhysicsOnFinish = false;
+    [HideInInspector] public Transform _handTransform;
+    [HideInInspector] public Transform _targetTransform;
+    [HideInInspector] public Transform _targetRotationTransform;
 
-    
-     public Transform _handTransform;
-     public Transform _targetTransform;
-     public Transform _targetRotationTransform;
-
-    
-    public Vector3 _handPositionOffset;
-    public Vector3 _handRotationOffset;
+    [HideInInspector] public Vector3 _handPositionOffset;
+    [HideInInspector] public Vector3 _handRotationOffset;
 
     private Vector3 _resetPosition;
     private Quaternion _resetRotation;
@@ -35,6 +26,8 @@ public class WoodFuel : MonoBehaviour
     private bool _isMoving;
 
     public event Action MoveCompleted;
+
+    private WoodFuelMotionSettings MotionSettings => GameSettings.Current.WoodFuelMotion;
 
     private void Awake()
     {
@@ -50,33 +43,33 @@ public class WoodFuel : MonoBehaviour
 
         _moveTimer += Time.fixedDeltaTime;
 
-        float t = Mathf.Clamp01(_moveTimer / _moveDuration);
-        float easedT = Mathf.SmoothStep(0f, 1f, t);
+        WoodFuelMotionSettings settings = MotionSettings;
+        float t = Mathf.Clamp01(_moveTimer / settings.MoveDuration);
+        float easedT = settings.MoveCurve == null ? t : Mathf.Clamp01(settings.MoveCurve.Evaluate(t));
 
         Vector3 linearPosition = Vector3.Lerp(_moveStartPosition, _moveEndPosition, easedT);
-        float arc = Mathf.Sin(easedT * Mathf.PI) * _arcHeight;
+        float arc = Mathf.Sin(easedT * Mathf.PI) * settings.ArcHeight;
         Vector3 finalPosition = linearPosition + Vector3.up * arc;
 
         rb.MovePosition(finalPosition);
 
         Quaternion targetRotation = Quaternion.Slerp(_moveStartRotation, _moveEndRotation, easedT);
-        Quaternion smoothedRotation = Quaternion.Slerp(rb.rotation, targetRotation, _rotationLerpSpeed * Time.fixedDeltaTime);
+        Quaternion smoothedRotation = Quaternion.Slerp(rb.rotation, targetRotation, settings.RotationLerpSpeed * Time.fixedDeltaTime);
         rb.MoveRotation(smoothedRotation);
 
-        if (Vector3.Distance(rb.position, _moveEndPosition) <= _stopDistance || t >= 1f)
+        if (Vector3.Distance(rb.position, _moveEndPosition) <= settings.StopDistance || t >= 1f)
         {
             rb.MovePosition(_moveEndPosition);
             rb.MoveRotation(_moveEndRotation);
 
             _isMoving = false;
 
-            if (_releasePhysicsOnFinish)
-            {
+            if (settings.ReleasePhysicsOnFinish)
                 rb.isKinematic = false;
-                MoveCompleted?.Invoke();
-            }
             else
                 rb.isKinematic = true;
+
+            MoveCompleted?.Invoke();
         }
     }
 

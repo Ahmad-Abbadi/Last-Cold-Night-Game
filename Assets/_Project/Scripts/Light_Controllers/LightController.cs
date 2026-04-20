@@ -3,10 +3,6 @@ using UnityEngine;
 
 public class LightController : MonoBehaviour
 {
-    [Header("Settings")]
-    [SerializeField] private float maxLightIntensity;
-    [SerializeField] private float minLightIntensity;
-
     [Header("References")]
     [SerializeField] private StoveController stoveController;
 
@@ -16,6 +12,7 @@ public class LightController : MonoBehaviour
     [Space(10)]
     [SerializeField] private FireLightFlicker stoveLightFlicker;
 
+    private StoveLightSettings LightSettings => GameSettings.Current.StoveLight;
 
     private void OnEnable()
     {
@@ -43,6 +40,7 @@ public class LightController : MonoBehaviour
         if (stoveController == null || stoveLightFlicker == null)
             return;
 
-        stoveLightFlicker.BaseIntensity = Mathf.Lerp(minLightIntensity, maxLightIntensity, stoveController.HeatRatio);
+        StoveLightSettings settings = LightSettings;
+        stoveLightFlicker.BaseIntensity = Mathf.Lerp(settings.MinLightIntensity, settings.MaxLightIntensity, stoveController.HeatRatio);
     }
 }

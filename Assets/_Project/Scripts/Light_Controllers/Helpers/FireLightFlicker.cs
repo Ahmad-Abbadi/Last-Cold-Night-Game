@@ -3,23 +3,12 @@ using UnityEngine;
 [RequireComponent(typeof(Light))]
 public class FireLightFlicker : MonoBehaviour
 {
-    [Header("Base")]
+    [Header("References")]
     [SerializeField] private Light targetLight;
-    [SerializeField] private float baseIntensity = 4f;
-    [SerializeField] private float baseRange = 8f;
-
-    [Header("Flicker")]
-    [SerializeField] private float intensityVariation = 0.8f;
-    [SerializeField] private float rangeVariation = 0.35f;
-    [SerializeField] private float flickerSpeed = 6f;
-    [SerializeField] private float smoothing = 12f;
-
-    [Header("Position Jitter")]
-    [SerializeField] private bool usePositionJitter = true;
-    [SerializeField] private float positionJitterAmount = 0.03f;
-    [SerializeField] private float positionJitterSpeed = 4f;
 
     private Vector3 initialLocalPosition;
+    private float baseIntensity;
+    private float baseRange;
     private float intensityNoiseSeed;
     private float rangeNoiseSeed;
     private float posXNoiseSeed;
@@ -27,6 +16,8 @@ public class FireLightFlicker : MonoBehaviour
     private float posZNoiseSeed;
 
     public float BaseIntensity { get => baseIntensity; set => baseIntensity = value; }
+
+    private FireLightFlickerSettings FlickerSettings => GameSettings.Current.FireLightFlicker;
 
     private void Awake()
     {
@@ -41,36 +32,48 @@ public class FireLightFlicker : MonoBehaviour
         posYNoiseSeed = Random.Range(0f, 999f);
         posZNoiseSeed = Random.Range(0f, 999f);
 
-            BaseIntensity = targetLight.intensity;
+        FireLightFlickerSettings settings = FlickerSettings;
+        BaseIntensity = settings.BaseIntensity;
+        baseRange = settings.BaseRange;
 
-            baseRange = targetLight.range;
+        if (targetLight != null)
+        {
+            targetLight.intensity = BaseIntensity;
+            targetLight.range = baseRange;
+        }
     }
 
     private void Update()
     {
-        float time = Time.time * flickerSpeed;
+        if (targetLight == null)
+            return;
+
+        FireLightFlickerSettings settings = FlickerSettings;
+        baseRange = settings.BaseRange;
+
+        float time = Time.time * settings.FlickerSpeed;
 
         float intensityNoise = Mathf.PerlinNoise(intensityNoiseSeed, time) * 2f - 1f;
         float rangeNoise = Mathf.PerlinNoise(rangeNoiseSeed, time * 0.85f) * 2f - 1f;
 
-        float targetIntensity = BaseIntensity + intensityNoise * intensityVariation;
-        float targetRange = baseRange + rangeNoise * rangeVariation;
+        float targetIntensity = BaseIntensity + intensityNoise * settings.IntensityVariation;
+        float targetRange = baseRange + rangeNoise * settings.RangeVariation;
 
-        targetLight.intensity = Mathf.Lerp(targetLight.intensity, targetIntensity, Time.deltaTime * smoothing);
-        targetLight.range = Mathf.Lerp(targetLight.range, targetRange, Time.deltaTime * smoothing);
+        targetLight.intensity = Mathf.Lerp(targetLight.intensity, targetIntensity, Time.deltaTime * settings.Smoothing);
+        targetLight.range = Mathf.Lerp(targetLight.range, targetRange, Time.deltaTime * settings.Smoothing);
 
-        if (usePositionJitter)
+        if (settings.UsePositionJitter)
         {
-            float posTime = Time.time * positionJitterSpeed;
+            float posTime = Time.time * settings.PositionJitterSpeed;
 
-            float x = (Mathf.PerlinNoise(posXNoiseSeed, posTime) * 2f - 1f) * positionJitterAmount;
-            float y = (Mathf.PerlinNoise(posYNoiseSeed, posTime * 0.9f) * 2f - 1f) * positionJitterAmount * 0.5f;
-            float z = (Mathf.PerlinNoise(posZNoiseSeed, posTime * 1.1f) * 2f - 1f) * positionJitterAmount;
+            float x = (Mathf.PerlinNoise(posXNoiseSeed, posTime) * 2f - 1f) * settings.PositionJitterAmount;
+            float y = (Mathf.PerlinNoise(posYNoiseSeed, posTime * 0.9f) * 2f - 1f) * settings.PositionJitterAmount * 0.5f;
+            float z = (Mathf.PerlinNoise(posZNoiseSeed, posTime * 1.1f) * 2f - 1f) * settings.PositionJitterAmount;
 
             transform.localPosition = Vector3.Lerp(
                 transform.localPosition,
                 initialLocalPosition + new Vector3(x, y, z),
-                Time.deltaTime * smoothing
+                Time.deltaTime * settings.Smoothing
             );
         }
     }

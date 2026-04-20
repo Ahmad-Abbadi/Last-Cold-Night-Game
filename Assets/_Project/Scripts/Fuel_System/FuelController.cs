@@ -1,24 +1,20 @@
 using Sirenix.OdinInspector;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class FuelController : MonoBehaviour
 {
-    [SerializeField] private float startFuelAmount = 10f;
-    [SerializeField] private float heatAddedPerFuel;
-
-    [SerializeField] private float ownedFuel;
+    [SerializeField, ReadOnly] private float ownedFuel;
 
     [Header("Refrences")]
     [SerializeField] private WoodFuelManager woodFuelManager;
 
-    public float StartFuelAmount { get => startFuelAmount;}
+    public float StartFuelAmount { get => FuelSettings.StartFuelAmount;}
     public float OwendFuel { get => ownedFuel;}
-    public float HeatIncreasedByFuel { get => heatAddedPerFuel; }
+    public float HeatIncreasedByFuel { get => FuelSettings.HeatAddedPerFuel; }
 
+    private FuelSettings FuelSettings => GameSettings.Current.Fuel;
 
     public static event Action<float> OnFuelConsumedWithAmount;
     public static event Action OnFuelConsumed;
@@ -29,16 +25,26 @@ public class FuelController : MonoBehaviour
 
     private void Awake()
     {
-        ownedFuel = startFuelAmount;
+        ownedFuel = StartFuelAmount;
     }
 
     private void Update()
     {
-        if(Keyboard.current.spaceKey.wasPressedThisFrame) 
+        if(WasDebugConsumeFuelPressed())
         {
             ConsumeFuel();
         }
     }
+
+    private bool WasDebugConsumeFuelPressed()
+    {
+        FuelSettings settings = FuelSettings;
+        return settings.EnableDebugConsumeFuelInput
+            && settings.DebugConsumeFuelKey != Key.None
+            && Keyboard.current != null
+            && Keyboard.current[settings.DebugConsumeFuelKey].wasPressedThisFrame;
+    }
+
     [Button]
     public void ConsumeFuel()
     {
@@ -56,13 +62,16 @@ public class FuelController : MonoBehaviour
         {
             woodFuelManager.DoWoodFuelAnimation(OnFuelWoodAnimationDone);
         }
-
+        else
+        {
+            OnFuelWoodAnimationDone();
+        }
 
     }
 
     private void OnFuelWoodAnimationDone()
     {
-        OnFuelConsumedWithAmount?.Invoke(heatAddedPerFuel);
+        OnFuelConsumedWithAmount?.Invoke(HeatIncreasedByFuel);
         OnFuelConsumed?.Invoke();
     }
 
@@ -70,7 +79,7 @@ public class FuelController : MonoBehaviour
     private void ChangeFuelAmount(float amount)
     {
         ownedFuel += amount;
-        ownedFuel = Mathf.Clamp(ownedFuel, 0, startFuelAmount);
+        ownedFuel = Mathf.Clamp(ownedFuel, 0, StartFuelAmount);
         OnFuelAmountChanged?.Invoke();
 
     }

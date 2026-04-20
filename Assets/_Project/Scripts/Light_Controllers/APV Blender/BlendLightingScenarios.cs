@@ -7,23 +7,14 @@ public class BlendLightingScenarios : MonoBehaviour
     private StoveController stoveController;
     private ProbeReferenceVolume probRefVolume;
 
-    [Header("Scenarios")]
-    [SerializeField] private string scenario01;
-    [SerializeField] private string scenario02;
-    [SerializeField] private string scenario03;
-    [SerializeField] private string scenario04;
-
-    [Header("Blend")]
-    [SerializeField] private float blendDuration = 2.5f;
-    [SerializeField] private AnimationCurve blendCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
-    [Min(1)][SerializeField] private int numberOfCellsBlendedPerFrame = 64;
-
     private string currentScenario;
     private string fromScenario;
     private string toScenario;
 
     private float blendTimer;
     private bool isBlending;
+
+    private LightingScenarioSettings ScenarioSettings => GameSettings.Current.LightingScenarios;
 
     private void Awake()
     {
@@ -36,9 +27,9 @@ public class BlendLightingScenarios : MonoBehaviour
             return;
         }
 
-        currentScenario = scenario01;
+        currentScenario = ScenarioSettings.HotScenario;
         probRefVolume.lightingScenario = currentScenario;
-        probRefVolume.numberOfCellsBlendedPerFrame = numberOfCellsBlendedPerFrame;
+        probRefVolume.numberOfCellsBlendedPerFrame = ScenarioSettings.NumberOfCellsBlendedPerFrame;
     }
 
     private void OnEnable()
@@ -62,13 +53,21 @@ public class BlendLightingScenarios : MonoBehaviour
 
     private void HandleDebugInput()
     {
-        if (Keyboard.current == null)
+        LightingScenarioSettings settings = ScenarioSettings;
+        if (!settings.EnableDebugKeyboardInput || Keyboard.current == null)
             return;
 
-        if (Keyboard.current.digit1Key.wasPressedThisFrame) BlendToScenario01();
-        else if (Keyboard.current.digit2Key.wasPressedThisFrame) BlendToScenario02();
-        else if (Keyboard.current.digit3Key.wasPressedThisFrame) BlendToScenario03();
-        else if (Keyboard.current.digit4Key.wasPressedThisFrame) BlendToScenario04();
+        if (WasPressed(settings.HotDebugKey)) BlendToScenario01();
+        else if (WasPressed(settings.StableDebugKey)) BlendToScenario02();
+        else if (WasPressed(settings.LowDebugKey)) BlendToScenario03();
+        else if (WasPressed(settings.CriticalDebugKey)) BlendToScenario04();
+    }
+
+    private bool WasPressed(Key key)
+    {
+        return key != Key.None
+            && Keyboard.current != null
+            && Keyboard.current[key].wasPressedThisFrame;
     }
 
     private void UpdateBlend()
@@ -77,8 +76,9 @@ public class BlendLightingScenarios : MonoBehaviour
             return;
 
         blendTimer += Time.deltaTime;
-        float t = Mathf.Clamp01(blendTimer / blendDuration);
-        float smoothT = blendCurve.Evaluate(t);
+        LightingScenarioSettings settings = ScenarioSettings;
+        float t = Mathf.Clamp01(blendTimer / settings.BlendDuration);
+        float smoothT = settings.BlendCurve == null ? t : Mathf.Clamp01(settings.BlendCurve.Evaluate(t));
 
         probRefVolume.BlendLightingScenario(toScenario, smoothT);
 
@@ -105,23 +105,36 @@ public class BlendLightingScenarios : MonoBehaviour
         blendTimer = 0f;
         isBlending = true;
 
+        probRefVolume.numberOfCellsBlendedPerFrame = ScenarioSettings.NumberOfCellsBlendedPerFrame;
         probRefVolume.lightingScenario = fromScenario;
         probRefVolume.BlendLightingScenario(toScenario, 0f);
     }
 
     private void OnHeatTypeChanged(HeatLevelType type)
     {
+        StartBlend(GetScenarioForHeatType(type));
+    }
+
+    private string GetScenarioForHeatType(HeatLevelType type)
+    {
+        LightingScenarioSettings settings = ScenarioSettings;
         switch (type)
         {
-            case HeatLevelType.Hot: BlendToScenario01(); break;
-            case HeatLevelType.Stable: BlendToScenario02(); break;
-            case HeatLevelType.Low: BlendToScenario03(); break;
-            case HeatLevelType.Critical: BlendToScenario04(); break;
+            case HeatLevelType.Hot:
+                return settings.HotScenario;
+            case HeatLevelType.Stable:
+                return settings.StableScenario;
+            case HeatLevelType.Low:
+                return settings.LowScenario;
+            case HeatLevelType.Critical:
+                return settings.CriticalScenario;
+            default:
+                return settings.CriticalScenario;
         }
     }
 
-    public void BlendToScenario01() => StartBlend(scenario01);
-    public void BlendToScenario02() => StartBlend(scenario02);
-    public void BlendToScenario03() => StartBlend(scenario03);
-    public void BlendToScenario04() => StartBlend(scenario04);
+    public void BlendToScenario01() => StartBlend(ScenarioSettings.HotScenario);
+    public void BlendToScenario02() => StartBlend(ScenarioSettings.StableScenario);
+    public void BlendToScenario03() => StartBlend(ScenarioSettings.LowScenario);
+    public void BlendToScenario04() => StartBlend(ScenarioSettings.CriticalScenario);
 }
