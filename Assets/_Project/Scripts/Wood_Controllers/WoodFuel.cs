@@ -14,14 +14,14 @@ public class WoodFuel : MonoBehaviour
     [SerializeField] private float _stopDistance = 0.02f;
     [SerializeField] private bool _releasePhysicsOnFinish = false;
 
-    [Header("Refs")]
-    [SerializeField] private Transform _handTransform;
-    [SerializeField] private Transform _targetTransform;
-    [SerializeField] private Transform _targetRotationTransform;
+    
+     public Transform _handTransform;
+     public Transform _targetTransform;
+     public Transform _targetRotationTransform;
 
-    [Header("Hand Hold Offset")]
-    [SerializeField] private Vector3 _handPositionOffset;
-    [SerializeField] private Vector3 _handRotationOffset;
+    
+    public Vector3 _handPositionOffset;
+    public Vector3 _handRotationOffset;
 
     private Vector3 _resetPosition;
     private Quaternion _resetRotation;
@@ -105,19 +105,9 @@ public class WoodFuel : MonoBehaviour
         if (_targetTransform == null)
             return;
 
-        if (_handTransform != null)
-        {
-            _moveStartPosition = _handTransform.TransformPoint(_handPositionOffset);
-            _moveStartRotation = _handTransform.rotation * Quaternion.Euler(_handRotationOffset);
-
-            rb.position = _moveStartPosition;
-            rb.rotation = _moveStartRotation;
-        }
-        else
-        {
-            _moveStartPosition = rb.position;
-            _moveStartRotation = rb.rotation;
-        }
+        
+        _moveStartPosition = rb.position;
+        _moveStartRotation = rb.rotation;
 
         _moveEndPosition = _targetTransform.position;
         _moveEndRotation = _targetRotationTransform != null ? _targetRotationTransform.rotation : rb.rotation;

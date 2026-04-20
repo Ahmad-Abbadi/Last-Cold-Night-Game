@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class FuelController : MonoBehaviour
 {
@@ -31,6 +32,13 @@ public class FuelController : MonoBehaviour
         ownedFuel = startFuelAmount;
     }
 
+    private void Update()
+    {
+        if(Keyboard.current.spaceKey.wasPressedThisFrame) 
+        {
+            ConsumeFuel();
+        }
+    }
     [Button]
     public void ConsumeFuel()
     {
