@@ -6,6 +6,7 @@ using UnityEngine;
 public class WoodFuel : MonoBehaviour
 {
     private Rigidbody rb;
+    private Collider col;
 
     [HideInInspector] public Transform _handTransform;
     [HideInInspector] public Transform _targetTransform;
@@ -32,6 +33,7 @@ public class WoodFuel : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        col = GetComponent<Collider>();
         _resetPosition = transform.position;
         _resetRotation = transform.rotation;
     }

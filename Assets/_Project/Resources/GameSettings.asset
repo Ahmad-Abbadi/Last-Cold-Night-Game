@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StoveHeat:
     HeatMax: 100
-    HeatDrainRate: 1
+    HeatDrainRate: 0.01
     Thresholds:
       Hot: 75
       Stable: 60
       Low: 45
       Critical: 22
   Fuel:
-    StartFuelAmount: 7
-    HeatAddedPerFuel: 28
+    StartFuelAmount: 10
+    HeatAddedPerFuel: 20
     EnableDebugConsumeFuelInput: 1
     DebugConsumeFuelKey: 1
   FuelUi:
@@ -61,6 +61,7 @@ MonoBehaviour:
     SnapToHandOnStart: 0
     HandPositionOffset: {x: 0, y: 0, z: 0}
     HandRotationOffset: {x: 0, y: 0, z: 0}
+    WoodPrefab: {fileID: 4122337189671353229, guid: d9a4660c1c7c3394d9937a0ffe103b89, type: 3}
   StoveLight:
     MinLightIntensity: 0.5
     MaxLightIntensity: 6
@@ -72,7 +73,7 @@ MonoBehaviour:
     FlickerSpeed: 6
     Smoothing: 12
     UsePositionJitter: 1
-    PositionJitterAmount: 0.03
+    PositionJitterAmount: 0.1
     PositionJitterSpeed: 4
   StoveFireVisuals:
     SmoothingTime: 0.35
@@ -119,7 +120,7 @@ MonoBehaviour:
     StableScenario: Stable
     LowScenario: Cold
     CriticalScenario: Critical
-    BlendDuration: 5
+    BlendDuration: 0.75
     BlendCurve:
       serializedVersion: 2
       m_Curve:
@@ -151,25 +152,25 @@ MonoBehaviour:
     LowDebugKey: 43
     CriticalDebugKey: 44
   VolumeBlending:
-    BlendDuration: 5
+    BlendDuration: 0.75
     BlendCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 1
-        outSlope: 1
-        tangentMode: 34
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
         time: 1
         value: 1
-        inSlope: 1
-        outSlope: 1
-        tangentMode: 34
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
         weightedMode: 0
         inWeight: 0
         outWeight: 0

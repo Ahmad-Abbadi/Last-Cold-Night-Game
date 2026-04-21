@@ -10,6 +10,7 @@ public class FuelController : MonoBehaviour
     [Header("Refrences")]
     [SerializeField] private WoodFuelManager woodFuelManager;
 
+
     public float StartFuelAmount { get => FuelSettings.StartFuelAmount;}
     public float OwendFuel { get => ownedFuel;}
     public float HeatIncreasedByFuel { get => FuelSettings.HeatAddedPerFuel; }
@@ -26,6 +27,12 @@ public class FuelController : MonoBehaviour
     private void Awake()
     {
         ownedFuel = StartFuelAmount;
+
+    }
+
+    private void Start()
+    {
+        woodFuelManager.InitializeWood((int)StartFuelAmount);
     }
 
     private void Update()
